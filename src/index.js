@@ -1,31 +1,48 @@
-console.log('hey yaa!');
+console.log("Restaurant Page for The Odin Project - By Joaquin Arruiz");
 import  './style.css';
 
 import loadHome from './modules/home';
 import loadContact from './modules/contact';
-import loadMenu from './modules/menu'
+import loadMenu from './modules/menu';
 
 
 
-const content = document.getElementById("content")
+function buttonCreator(id, cls, txt){ // create a button using parameters
+    const button = document.createElement('button');
+    button.setAttribute('id', id);
+    button.classList.add(cls);
+    button.innerText = txt;
+    return button;
+}
 
-const header = document.getElementById('header');
 
 
-const homeButton = document.createElement('div');
-homeButton.setAttribute('id', 'homeButton');
-homeButton.classList.add('headerButton');
-homeButton.innerText = "Home";
-header.appendChild(homeButton);
+function navigationEvents() { // add nav events to the created buttons
+    const homeButton = document.getElementById('homeButton');
+    const menuButton = document.getElementById('menuButton');
+    const contactButton = document.getElementById('contactButton');
 
-const menuButton = document.createElement('div');
-menuButton.setAttribute('id', 'menuButton');
-menuButton.classList.add('headerButton');
-menuButton.innerText = "Menu";
-header.appendChild(menuButton);
+    homeButton.addEventListener('click', loadHome);
+    menuButton.addEventListener('click', loadMenu);
+    contactButton.addEventListener('click', loadContact);
+}
 
-const contactButton = document.createElement('div');
-contactButton.setAttribute('id', 'contactButton');
-contactButton.classList.add('headerButton');
-contactButton.innerText = "Contact";
-header.appendChild(contactButton);
+
+
+let init = () => { // creates the header and the content section
+    const header = document.createElement('section');
+    header.classList.add('header');
+    document.body.appendChild(header);
+
+    const content = document.createElement('section');
+    content.classList.add('content');
+    document.body.appendChild(content);
+
+    header.appendChild(buttonCreator("homeButton", "headerButton", "Home")); //adds the buttons to the header
+    header.appendChild(buttonCreator("menuButton", "headerButton", "Menu"));
+    header.appendChild(buttonCreator("contactButton", "headerButton", "Contact"));
+
+    navigationEvents()
+}
+
+init()

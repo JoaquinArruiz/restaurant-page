@@ -218,7 +218,25 @@ table {
 	
 }
 
-	/* */
+/* ========== CONTENT TEXT and IMAGES for HOME ========== */
+
+.homeBody {
+	width: 80%;
+	margin: 0 auto;
+	margin-top: 2em;
+	border-radius: 13px;
+	background-image: url("../images/card-background.jpg");
+
+	p {
+		font-family: 'Courgette', cursive;
+		font-size: 1.5em;
+		color: rgb(255, 255, 255);
+		text-shadow: 2px 2px 0px rgb(0, 0, 0);
+		padding: 1em;
+	}
+
+
+}
 
 /* ========== TEXT and IMAGES for MENU ========== */
 .cardsContainer{

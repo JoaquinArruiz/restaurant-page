@@ -1,6 +1,5 @@
 import pIcon from '../images/icons/pizza-icon.png'
 import pSliceIcon from '../images/icons/slice-pizza-icon.png'
-import dIcon from '../images/icons/pizza-deliver.png'
 
 
 let loadHome = () => {
@@ -55,10 +54,20 @@ let loadHome = () => {
 
     const homeBody = document.createElement('div');
     homeBody.classList.add('homeBody');
-    const contentBodyText=document.createElement('h1');
+    const contentBodyText=document.createElement('p');
+    contentBodyText.innerText = `Welcome to our beloved pizza shop, where we've been serving up delicious, handcrafted pies since 1985. From our humble beginnings as a small family-owned business, we've grown into a local institution known for our fresh ingredients, homemade sauces, and crispy crusts.
+
+    Over the years, we've expanded our menu to include a variety of classic and unique toppings, from savory meats to fresh vegetables. We've also become a gathering place for friends and families to come together and share a slice or two.
+    
+    When the pandemic hit, we knew we had to adapt to stay afloat. We quickly added delivery services so our customers could still enjoy our pizzas from the comfort of their own homes. And while the past year has been challenging, we've been grateful for the opportunity to continue serving our community during these difficult times. 🛵
+    
+    We may be a small pizza shop, but we put a lot of heart and soul into everything we do. From our kitchen to your door, we hope our pizzas bring a smile to your face and warmth to your heart. Thank you for supporting us through thick and thin.`
+
+    homeBody.appendChild(contentBodyText);
 
 
     content.appendChild(topContainer);
+    content.appendChild(homeBody);
 }
 
 export default loadHome;

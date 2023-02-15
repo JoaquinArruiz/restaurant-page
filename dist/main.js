@@ -166,7 +166,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
   \*****************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony import */ var _images_pizzas_peperoni_pizza_png__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../images/pizzas/peperoni-pizza.png */ \"./src/images/pizzas/peperoni-pizza.png\");\n/* harmony import */ var _images_pizzas_margarita_pizza_png__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../images/pizzas/margarita-pizza.png */ \"./src/images/pizzas/margarita-pizza.png\");\n/* harmony import */ var _images_pizzas_mushroom_pizza_png__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../images/pizzas/mushroom-pizza.png */ \"./src/images/pizzas/mushroom-pizza.png\");\n/* harmony import */ var _images_pizzas_chicken_pizza_png__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../images/pizzas/chicken-pizza.png */ \"./src/images/pizzas/chicken-pizza.png\");\n\n\n\n\n\nlet loadMenu = () => {\n    const content = document.getElementById('content');\n    content.innerHTML = '';\n\n    const homeButton = document.getElementById('homeButton');\n    const menuButton = document.getElementById('menuButton');\n    const contactButton = document.getElementById('contactButton');\n\n    contactButton.classList.remove('activeButton');\n    menuButton.classList.add('activeButton');\n    homeButton.classList.remove('activeButton');\n\n\n\n    let pizzaCreator = (name,topping,money,src) => {\n            const card = document.createElement('div');\n            card.classList.add('card');\n\n            const title = document.createElement('h1');\n            title.textContent = name;\n\n            const ingredients = document.createElement('h2');\n            ingredients.textContent = \"Ingredients: \"+topping;\n\n            const price = document.createElement('h3');\n            price.textContent = money;\n\n            const img = document.createElement('img');\n            img.classList.add('cardImage')\n            img.setAttribute('src', src);\n\n            card.appendChild(title);\n            card.appendChild(img);\n            card.appendChild(ingredients);\n            card.appendChild(price);\n\n            return card;\n    }\n\n        const pizzas = [\n            pizzaCreator(\n                'Prodigious Peperoni',\n                'Mozzarella, Peperoni, Tomato Sauce',\n                '$10.99',\n                _images_pizzas_peperoni_pizza_png__WEBPACK_IMPORTED_MODULE_0__\n            ),\n            pizzaCreator(\n                'Awesome Albaca',\n                'Mozzarella, Albaca, Olive Oil and Tomatoes',\n                '$9.99',\n                _images_pizzas_margarita_pizza_png__WEBPACK_IMPORTED_MODULE_1__\n            ),\n            pizzaCreator(\n                'Magic Mushroom',\n                'Mozzarella, Olives, Mushrooms, Peperoni, Tomatoes',\n                '$9.99',\n                _images_pizzas_mushroom_pizza_png__WEBPACK_IMPORTED_MODULE_2__\n            ),\n            pizzaCreator(\n                'Charming Chicken',\n                'Chicken, Mushrooms and Tomatoes',\n                '$10.99',\n                _images_pizzas_chicken_pizza_png__WEBPACK_IMPORTED_MODULE_3__\n            )\n        ];\n    \n    const cardsContainer = document.createElement('div')\n    cardsContainer.classList.add('cardsContainer')\n\n    pizzas.forEach((pizza) =>{\n        cardsContainer.appendChild(pizza);\n    });\n\n    content.appendChild(cardsContainer)\n}\n\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (loadMenu);\n\n//# sourceURL=webpack://restaurant-page/./src/modules/menu.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\nObject(function webpackMissingModule() { var e = new Error(\"Cannot find module './images/pizzas/peperoni-pizza.png'\"); e.code = 'MODULE_NOT_FOUND'; throw e; }());\nObject(function webpackMissingModule() { var e = new Error(\"Cannot find module './images/pizzas/margarita-pizza.png'\"); e.code = 'MODULE_NOT_FOUND'; throw e; }());\nObject(function webpackMissingModule() { var e = new Error(\"Cannot find module './images/pizzas/mushroom-pizza.png'\"); e.code = 'MODULE_NOT_FOUND'; throw e; }());\nObject(function webpackMissingModule() { var e = new Error(\"Cannot find module './images/pizzas/chicken-pizza.png'\"); e.code = 'MODULE_NOT_FOUND'; throw e; }());\n\n\n\n\n\nlet loadMenu = () => {\n    const content = document.getElementById('content');\n    content.innerHTML = '';\n\n    const homeButton = document.getElementById('homeButton');\n    const menuButton = document.getElementById('menuButton');\n    const contactButton = document.getElementById('contactButton');\n\n    contactButton.classList.remove('activeButton');\n    menuButton.classList.add('activeButton');\n    homeButton.classList.remove('activeButton');\n\n\n\n    let pizzaCreator = (name,topping,money,src) => {\n            const card = document.createElement('div');\n            card.classList.add('card');\n\n            const title = document.createElement('h1');\n            title.textContent = name;\n\n            const ingredients = document.createElement('h2');\n            ingredients.textContent = \"Ingredients: \"+topping;\n\n            const price = document.createElement('h3');\n            price.textContent = money;\n\n            const img = document.createElement('img');\n            img.classList.add('cardImage')\n            img.setAttribute('src', src);\n\n            card.appendChild(title);\n            card.appendChild(img);\n            card.appendChild(ingredients);\n            card.appendChild(price);\n\n            return card;\n    }\n\n        const pizzas = [\n            pizzaCreator(\n                'Prodigious Peperoni',\n                'Mozzarella, Peperoni, Tomato Sauce',\n                '$10.99',\n                Object(function webpackMissingModule() { var e = new Error(\"Cannot find module './images/pizzas/peperoni-pizza.png'\"); e.code = 'MODULE_NOT_FOUND'; throw e; }())\n            ),\n            pizzaCreator(\n                'Awesome Albaca',\n                'Mozzarella, Albaca, Olive Oil and Tomatoes',\n                '$9.99',\n                Object(function webpackMissingModule() { var e = new Error(\"Cannot find module './images/pizzas/margarita-pizza.png'\"); e.code = 'MODULE_NOT_FOUND'; throw e; }())\n            ),\n            pizzaCreator(\n                'Magic Mushroom',\n                'Mozzarella, Olives, Mushrooms, Peperoni, Tomatoes',\n                '$9.99',\n                Object(function webpackMissingModule() { var e = new Error(\"Cannot find module './images/pizzas/mushroom-pizza.png'\"); e.code = 'MODULE_NOT_FOUND'; throw e; }())\n            ),\n            pizzaCreator(\n                'Charming Chicken',\n                'Chicken, Mushrooms and Tomatoes',\n                '$10.99',\n                Object(function webpackMissingModule() { var e = new Error(\"Cannot find module './images/pizzas/chicken-pizza.png'\"); e.code = 'MODULE_NOT_FOUND'; throw e; }())\n            )\n        ];\n    \n    const cardsContainer = document.createElement('div')\n    cardsContainer.classList.add('cardsContainer')\n\n    pizzas.forEach((pizza) =>{\n        cardsContainer.appendChild(pizza);\n    });\n\n    content.appendChild(cardsContainer)\n}\n\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (loadMenu);\n\n//# sourceURL=webpack://restaurant-page/./src/modules/menu.js?");
 
 /***/ }),
 
@@ -207,46 +207,6 @@ eval("module.exports = __webpack_require__.p + \"19859826a42569a17ed4.png\";\n\n
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 eval("module.exports = __webpack_require__.p + \"da59107db9ff4301ab77.png\";\n\n//# sourceURL=webpack://restaurant-page/./src/images/icons/slice-pizza-icon.png?");
-
-/***/ }),
-
-/***/ "./src/images/pizzas/chicken-pizza.png":
-/*!*********************************************!*\
-  !*** ./src/images/pizzas/chicken-pizza.png ***!
-  \*********************************************/
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
-
-eval("module.exports = __webpack_require__.p + \"9796e685d9eaffe1255c.png\";\n\n//# sourceURL=webpack://restaurant-page/./src/images/pizzas/chicken-pizza.png?");
-
-/***/ }),
-
-/***/ "./src/images/pizzas/margarita-pizza.png":
-/*!***********************************************!*\
-  !*** ./src/images/pizzas/margarita-pizza.png ***!
-  \***********************************************/
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
-
-eval("module.exports = __webpack_require__.p + \"0ee1ad729ab34d4f8b2a.png\";\n\n//# sourceURL=webpack://restaurant-page/./src/images/pizzas/margarita-pizza.png?");
-
-/***/ }),
-
-/***/ "./src/images/pizzas/mushroom-pizza.png":
-/*!**********************************************!*\
-  !*** ./src/images/pizzas/mushroom-pizza.png ***!
-  \**********************************************/
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
-
-eval("module.exports = __webpack_require__.p + \"5b20776c663d5805837e.png\";\n\n//# sourceURL=webpack://restaurant-page/./src/images/pizzas/mushroom-pizza.png?");
-
-/***/ }),
-
-/***/ "./src/images/pizzas/peperoni-pizza.png":
-/*!**********************************************!*\
-  !*** ./src/images/pizzas/peperoni-pizza.png ***!
-  \**********************************************/
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
-
-eval("module.exports = __webpack_require__.p + \"e69533c55b82e5fb2d2e.png\";\n\n//# sourceURL=webpack://restaurant-page/./src/images/pizzas/peperoni-pizza.png?");
 
 /***/ })
 

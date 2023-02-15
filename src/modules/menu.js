@@ -1,4 +1,7 @@
-
+import pepImage from '../images/pizzas/peperoni-pizza.png'
+import albImage from '../images/pizzas/margarita-pizza.png'
+import mushImage from '../images/pizzas/mushroom-pizza.png'
+import chickImage from '../images/pizzas/chicken-pizza.png'
 
 let loadMenu = () => {
     const content = document.getElementById('content');
@@ -44,25 +47,25 @@ let loadMenu = () => {
                 'Prodigious Peperoni',
                 'Mozzarella, Peperoni, Tomato Sauce',
                 '$10.99',
-                'restaurant-page/src/images/pizzas/peperoni-pizza.png'
+                pepImage
             ),
             pizzaCreator(
                 'Awesome Albaca',
                 'Mozzarella, Albaca, Olive Oil and Tomatoes',
                 '$9.99',
-                'restaurant-page/src/images/pizzas/margarita-pizza.png'
+                albImage
             ),
             pizzaCreator(
                 'Magic Mushroom',
                 'Mozzarella, Olives, Mushrooms, Peperoni, Tomatoes',
                 '$9.99',
-                'restaurant-page/src/images/pizzas/mushroom-pizza.png'
+                mushImage
             ),
             pizzaCreator(
                 'Charming Chicken',
                 'Chicken, Mushrooms and Tomatoes',
                 '$10.99',
-                'restaurant-page/src/images/pizzas/chicken-pizza.png'
+                chickImage
             )
         ];
     

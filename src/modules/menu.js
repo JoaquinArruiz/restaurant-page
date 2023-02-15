@@ -12,7 +12,7 @@ let loadMenu = () => {
             title.textContent = name;
 
             let ingredients = document.createElement('h2');
-            ingredients.textContent = topping;
+            ingredients.textContent = "Ingredients: "+topping;
 
             let price = document.createElement('h3');
             price.textContent = money;
@@ -31,27 +31,27 @@ let loadMenu = () => {
 
         const pizzas = [
             pizzaCreator(
-                'Peperoni',
+                'Prodigious Peperoni',
                 'Mozzarella, Peperoni, Tomato Sauce',
-                '$10',
+                '$10.99',
                 '../src/images/pizzas/peperoni-pizza.png'
             ),
             pizzaCreator(
-                'Margarita',
+                'Awesome Albaca',
                 'Mozzarella, Albaca, Olive Oil and Tomatoes',
-                '$9',
+                '$9.99',
                 '../src/images/pizzas/margarita-pizza.png'
             ),
             pizzaCreator(
-                '',
+                'Magic Mushroom',
                 'Mozzarella, Olives, Mushrooms, Peperoni, Tomatoes',
-                '$10',
+                '$9.99',
                 '../src/images/pizzas/mushroom-pizza.png'
             ),
             pizzaCreator(
-                '',
+                'Charming Chicken',
                 'Chicken, Mushrooms and Tomatoes',
-                '$10',
+                '$10.99',
                 '../src/images/pizzas/chicken-pizza.png'
             )
         ];

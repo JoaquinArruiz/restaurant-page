@@ -15,12 +15,13 @@
 
 
 /* ===============  FONTS ===============  */
-@import url('https://fonts.googleapis.com/css2?family=Courgette&family=Fredoka+One&family=Permanent+Marker&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Courgette&family=Fredoka+One&family=Pacifico&family=Permanent+Marker&display=swap');
 
 /* Font Rules: 
 	font-family: 'Courgette', cursive;
 	font-family: 'Fredoka One', cursive;
 	font-family: 'Permanent Marker', cursive;
+	font-family: 'Pacifico', cursive;
 */
 
 
@@ -162,7 +163,7 @@ table {
 	padding-top: 1em;
 	transition: all, 600ms;
 	margin-bottom: 2em;
-	padding-bottom: 1em;
+	padding-bottom: 2em;
 
 	.transition{
 		opacity: 0;
@@ -177,7 +178,7 @@ table {
 	width: 80%;
 	justify-content: center;
 	align-items: center;
-	background-color: rgb(204, 134, 43);
+	background-image: url("../images/card-background.jpg");
 	border-radius: 13px;
 
 	.headerIcon {
@@ -218,15 +219,54 @@ table {
 .cardsContainer{
 	display: flex;
 	flex-wrap: wrap;
+	margin: 0 auto;
+	margin-left: 1em;
+	margin-right: 1em;
 	justify-content: center;
+	
 
 	.card{
 		background-color: rgb(204, 134, 43);
-		width: 10em;
-		height: fit-content;
+		background-image: url("../images/card-background.jpg");
+		width: 15em;
+		height: 27em;
 		margin: 0 auto;
 		margin-top: 2em;
 		padding: 1em;
+		border-radius: 1em;
+
+		h1 {
+			font-family: 'Courgette', cursive;
+			font-weight: bold;
+			font-size: 2.5em;
+			text-align: center;
+			color: white;
+			text-shadow: 3px 3px 3px rgb(0, 0, 0);
+			-webkit-text-stroke: 1px rgba(0, 0, 0, 0.7);
+		}
+
+		h2 {
+			font-family: 'Permanent Marker', cursive;
+			color: rgb(255, 255, 255);
+			text-shadow: 2px 2px 0px rgb(0, 0, 0);
+			font-size: 1em;
+			
+		}
+
+		h3{
+			font-size: 3em;
+			color: rgb(0, 224, 0);
+			text-shadow: 2px 2px 2px rgb(0, 0, 0);
+			-webkit-text-stroke: 1px rgba(0, 0, 0, 0.7);
+			width: fit-content;
+			border-radius: 3em;
+			margin: 0 auto;
+			margin-top: 10px;
+			padding: 0.5em;
+			padding-top: 0.2em;
+			
+			font-family: 'Pacifico', cursive;
+		}
 
 		.cardImage {
 			filter: drop-shadow(5px 5px 5px black);

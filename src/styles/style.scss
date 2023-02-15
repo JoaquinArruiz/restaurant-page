@@ -143,6 +143,11 @@ table {
 		-webkit-text-stroke: 1px black;
 		transition: ease-in-out, 500ms;
 	  }
+
+	  .activeButton{
+		background-color: rgb(248, 208, 28);
+		color: rgb(255, 60, 0);
+	  }
 }
 
 .navBar{

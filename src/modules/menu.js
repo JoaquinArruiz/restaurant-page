@@ -4,6 +4,16 @@ let loadMenu = () => {
     const content = document.getElementById('content');
     content.innerHTML = '';
 
+    const homeButton = document.getElementById('homeButton');
+    const menuButton = document.getElementById('menuButton');
+    const contactButton = document.getElementById('contactButton');
+
+    contactButton.classList.remove('activeButton');
+    menuButton.classList.add('activeButton');
+    homeButton.classList.remove('activeButton');
+
+
+
     let pizzaCreator = (name,topping,money,src) => {
             let card = document.createElement('div');
             card.classList.add('card');

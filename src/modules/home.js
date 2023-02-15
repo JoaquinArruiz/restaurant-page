@@ -7,45 +7,58 @@ let loadHome = () => {
 
     //Clearing all the inside content
     const content = document.getElementById('content');
-    content.innerHTML = ''
+    content.innerHTML = '';
+
+    const homeButton = document.getElementById('homeButton');
+    const menuButton = document.getElementById('menuButton');
+    const contactButton = document.getElementById('contactButton');
+
+    contactButton.classList.remove('activeButton');
+    menuButton.classList.remove('activeButton');
+    homeButton.classList.add('activeButton');
 
 
     //Container for text and images
-    const topContainer = document.createElement('div')
-    topContainer.classList.add('topContainer')
+    const topContainer = document.createElement('div');
+    topContainer.classList.add('topContainer');
 
     //image for the container
     
     const pizzaIcon = new Image();
     pizzaIcon.src = pIcon;
-    pizzaIcon.setAttribute('id','leftIcon')
-    pizzaIcon.classList.add('headerIcon')
+    pizzaIcon.setAttribute('id','leftIcon');
+    pizzaIcon.classList.add('headerIcon');
     pizzaIcon.height = 64;
     pizzaIcon.width = 64;
 
     topContainer.appendChild(pizzaIcon)
 
     //container for the text
-    const topTextContainer = document.createElement('div')
-    topTextContainer.classList.add('textContainer')
-    topContainer.appendChild(topTextContainer)
+    const topTextContainer = document.createElement('div');
+    topTextContainer.classList.add('textContainer');
+    topContainer.appendChild(topTextContainer);
 
     //text for the container
-    const topText = document.createElement('h2')
-    topText.classList.add('topText')
-    topText.innerText = 'The best Pizza!'
-    topTextContainer.appendChild(topText)
+    const topText = document.createElement('h2');
+    topText.classList.add('topText');
+    topText.innerText = 'The best Pizza!';
+    topTextContainer.appendChild(topText);
 
     //2nd image for the container
 
     const sliceIcon = new Image();
-    sliceIcon.src = pSliceIcon
-    sliceIcon.setAttribute('id','rightIcon')
-    sliceIcon.classList.add('headerIcon')
-    topContainer.appendChild(sliceIcon)
+    sliceIcon.src = pSliceIcon;
+    sliceIcon.setAttribute('id','rightIcon');
+    sliceIcon.classList.add('headerIcon');
+    topContainer.appendChild(sliceIcon);
    
 
-    content.appendChild(topContainer)
+    const homeBody = document.createElement('div');
+    homeBody.classList.add('homeBody');
+    const contentBodyText=document.createElement('h1');
+
+
+    content.appendChild(topContainer);
 }
 
 export default loadHome;

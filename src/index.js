@@ -22,7 +22,7 @@ function navigationEvents() { // add nav events to the created buttons
 
 let init = () => { // creates the header, title, buttones, navbar and the content section
     loadPage();
-    loadMenu();
+    loadHome();
     navigationEvents();
 }
 

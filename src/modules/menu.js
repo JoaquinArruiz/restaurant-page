@@ -1,7 +1,7 @@
-import pepImage from './images/pizzas/peperoni-pizza.png'
-import albImage from './images/pizzas/margarita-pizza.png'
-import mushImage from './images/pizzas/mushroom-pizza.png'
-import chickImage from './images/pizzas/chicken-pizza.png'
+import pepImage from '../images/pizzas/peperoni-pizza.png'
+import albImage from '../images/pizzas/margarita-pizza.png'
+import mushImage from '../images/pizzas/mushroom-pizza.png'
+import chickImage from '../images/pizzas/chicken-pizza.png'
 
 let loadMenu = () => {
     const content = document.getElementById('content');

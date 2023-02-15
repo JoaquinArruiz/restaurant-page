@@ -17,6 +17,6 @@ I learned a lot of js, webpack and sass during this project.
 
 -----
 #### Known Issues:   
-- Need to add more responsive design to the buttons and to the text.
-- Need to add animation to the page transition
+- Need to add more responsive design to the buttons and the text.
+- Need to add animation to the navbar-page transition
 - No bugs or functional issues known.

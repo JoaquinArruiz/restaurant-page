@@ -1,8 +1,10 @@
+
+
 let loadMenu = () => {
     const content = document.getElementById('content');
     content.innerHTML = '';
 
-    let pizzaCreator = (name,topping,money,imgsrc) => {
+    let pizzaCreator = (name,topping,money,src) => {
             let card = document.createElement('div');
             card.classList.add('card');
 
@@ -15,11 +17,12 @@ let loadMenu = () => {
             let price = document.createElement('h3');
             price.textContent = money;
 
-            let image = document.createElement('img');
-            image.setAttribute('src', imgsrc)
+            const img = document.createElement('img');
+            img.classList.add('cardImage')
+            img.setAttribute('src', src);
 
             card.appendChild(title);
-            card.appendChild(image);
+            card.appendChild(img);
             card.appendChild(ingredients);
             card.appendChild(price);
 
@@ -31,14 +34,36 @@ let loadMenu = () => {
                 'Peperoni',
                 'Mozzarella, Peperoni, Tomato Sauce',
                 '$10',
-                "../src/images/pizzas/peperoni-pizza.png"
+                '../src/images/pizzas/peperoni-pizza.png'
             ),
             pizzaCreator(
                 'Margarita',
-                'Mozzarella, '
+                'Mozzarella, Albaca, Olive Oil and Tomatoes',
+                '$9',
+                '../src/images/pizzas/margarita-pizza.png'
+            ),
+            pizzaCreator(
+                '',
+                'Mozzarella, Olives, Mushrooms, Peperoni, Tomatoes',
+                '$10',
+                '../src/images/pizzas/mushroom-pizza.png'
+            ),
+            pizzaCreator(
+                '',
+                'Chicken, Mushrooms and Tomatoes',
+                '$10',
+                '../src/images/pizzas/chicken-pizza.png'
             )
-        ]
+        ];
     
+    const cardsContainer = document.createElement('div')
+    cardsContainer.classList.add('cardsContainer')
+
+    pizzas.forEach((pizza) =>{
+        cardsContainer.appendChild(pizza);
+    });
+
+    content.appendChild(cardsContainer)
 }
 
 export default loadMenu;

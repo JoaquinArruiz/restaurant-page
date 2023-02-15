@@ -32,4 +32,4 @@ let loadPage = () => {
     navBar.appendChild(buttonCreator("contactButton", "headerButton", "Contact"));
 }
 
-export default loadPage();
+export default loadPage;

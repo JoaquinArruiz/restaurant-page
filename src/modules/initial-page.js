@@ -17,14 +17,7 @@ let loadPage = () => {
 
     const navBar = document.createElement('nav');
     navBar.classList.add('navBar');
-    header.appendChild(navBar)
-
-    const footer = document.createElement('footer');
-    const creditFooter = document.createElement('footer')
-    footer.classList.add('footer')
-    creditFooter.classList.add('footer')
-    content.appendChild(footer)
-    content.appendChild(creditFooter)
+    header.appendChild(navBar);
     
     const homeButton =buttonCreator("homeButton", "headerButton", "Home")
     const menuButton =buttonCreator("menuButton", "headerButton", "Menu")

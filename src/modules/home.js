@@ -71,11 +71,3 @@ let loadHome = () => {
 }
 
 export default loadHome;
-// for later use: <a href="https://www.freepik.com/free-photo/thinly-sliced-pepperoni-is-popular-pizza-topping-american-style-pizzerias-isolated-white-background-still-life_26593854.htm#&position=1&from_view=undefined">Image by YuliiaKa</a> on Freepik
-
-
-// for later use: <a href="https://www.flaticon.com/free-icons/pizza" title="pizza icons">Pizza icons created by Smashicons - Flaticon</a>
-
-//<a href="https://www.flaticon.com/free-icons/pizza" title="pizza icons">Pizza icons created by Freepik - Flaticon</a>
-
-//<a href="https://www.flaticon.com/free-icons/pizza" title="pizza icons">Pizza icons created by smashingstocks - Flaticon</a>

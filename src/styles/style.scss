@@ -321,6 +321,49 @@ table {
 
 }
 
+#footer {
+	position: relative;
+	bottom: 10px;
+    width: 100%;
+    transition: step-end, 1s;
+    margin: 0 auto;
+	padding: 3px;
+    font-family: 'Fredoka One', cursive;
+    background-color: rgba(0, 0, 0, 0.5);
+    height: 10%;
+    font-size: 1em;
+    text-align: center;
+    color: rgb(255, 255, 255);
+
+	span{
+		position: relative;
+		margin: auto;
+		top: 20%;
+		text-decoration: none;
+		text-shadow: 2px 2px 1px rgb(0, 0, 0);
+	}
+
+	a{
+		color: rgb(255,255,255);
+		position: relative;
+		margin: auto;
+		top: 20%;
+		text-decoration: none;
+		text-shadow: 2px 2px 1px rgb(0, 0, 0);
+		
+		&:hover{
+			transition: ease-in-out, 0.3s;
+			text-shadow: 2px 2px 1px rgb(0, 0, 0);
+			color: rgb(223, 182, 0);
+		}
+		&:active{
+			color: red;
+			transform: scale(0.95);
+		}
+	}
+}
+
+
 @media (max-aspect-ratio: 16/11){
 	.contactContainer{	
 		width:fit-content;

@@ -15,16 +15,16 @@ let loadMenu = () => {
 
 
     let pizzaCreator = (name,topping,money,src) => {
-            let card = document.createElement('div');
+            const card = document.createElement('div');
             card.classList.add('card');
 
-            let title = document.createElement('h1');
+            const title = document.createElement('h1');
             title.textContent = name;
 
-            let ingredients = document.createElement('h2');
+            const ingredients = document.createElement('h2');
             ingredients.textContent = "Ingredients: "+topping;
 
-            let price = document.createElement('h3');
+            const price = document.createElement('h3');
             price.textContent = money;
 
             const img = document.createElement('img');

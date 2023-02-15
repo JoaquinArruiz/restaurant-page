@@ -44,25 +44,25 @@ let loadMenu = () => {
                 'Prodigious Peperoni',
                 'Mozzarella, Peperoni, Tomato Sauce',
                 '$10.99',
-                '../src/images/pizzas/peperoni-pizza.png'
+                'restaurant-page/src/modules/menu.js'
             ),
             pizzaCreator(
                 'Awesome Albaca',
                 'Mozzarella, Albaca, Olive Oil and Tomatoes',
                 '$9.99',
-                '../src/images/pizzas/margarita-pizza.png'
+                'restaurant-page/src/modules/menu.js'
             ),
             pizzaCreator(
                 'Magic Mushroom',
                 'Mozzarella, Olives, Mushrooms, Peperoni, Tomatoes',
                 '$9.99',
-                '../src/images/pizzas/mushroom-pizza.png'
+                'restaurant-page/src/modules/menu.js'
             ),
             pizzaCreator(
                 'Charming Chicken',
                 'Chicken, Mushrooms and Tomatoes',
                 '$10.99',
-                '../src/images/pizzas/chicken-pizza.png'
+                'restaurant-page/src/modules/menu.js'
             )
         ];
     
